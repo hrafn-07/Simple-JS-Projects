@@ -1,0 +1,46 @@
+#quotes {
+    background-color: darkslategrey;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+#author {
+    background-color: dimgrey;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    text-align: end;
+    font-size: 18px;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    width: 98vw;
+}
+
+.container {
+    align-items: center;
+}
+
+#btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 50px 46%;
+    text-align: center;
+    transition: 0.3s;
+    border-style: solid;
+}
+
+#btn:hover {
+    background-color: #777777;
+    color: #000;
+}
