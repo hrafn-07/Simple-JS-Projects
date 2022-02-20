@@ -1,4 +1,5 @@
 var slide = document.getElementById("slide");
+const buttons = document.querySelectorAll(".buttons");
 
 let pics = [
 	"https://cdn.wallpapersafari.com/69/19/nhvSi4.png",
@@ -7,18 +8,18 @@ let pics = [
 	"https://images.squarespace-cdn.com/content/v1/5575355ae4b0080836694fb7/1591112316823-LYNN0L4DI6I0H9V81TP0/6658_ile_aux_cerfs_J_Sjoman_16BITS_V2-copy-720x480-df96b101-fb68-4332-81f4-d028a8ccf44f.png?format=2500w",
 ];
 
-const buttons = document.querySelectorAll(".buttons");
 let c = 0;
 buttons.forEach(function (button) {
 	button.addEventListener("click", function () {
 		if (button.classList.contains("left")) {
-			if (c < 0) c = pics.length - 1;
+			if (c < 0) c = (pics.length - 1);
 			else c--;
 		} else if (button.classList.contains("right")) {
-			if (c > pics.length - 1) c = 0;
+			if (c > (pics.length - 1)) c = 0;
 			else c++;
 		}
-
-		slide.style.backgroundImage = url(pics[c]);
+		console.log(pics.length - 1)
+		console.log(c);
+		slide.style.backgroundImage = "url(" + pics[c] + ")";
 	});
 });

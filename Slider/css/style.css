@@ -1,0 +1,40 @@
+body{
+	background-color: #ECB365;
+}
+.container {
+	background-color: #ECB365;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	margin:10% 25%;
+	width: auto;
+	height: auto;
+	padding: 5px;
+}
+#slide{
+	height: 480px;
+	width: 720px;
+	border: solid 10px;
+	background-color: aquamarine;
+	background-image: url("https://cdn.wallpapersafari.com/69/19/nhvSi4.png");
+}
+#left{
+	background-color: #ECB365;
+	border: none;
+	width: auto;
+	height: auto;
+	font-size: 100px;
+}
+#right{
+	background-color: #ECB365;
+	border: none;
+	width: auto;
+	height: auto;
+	font-size: 100px;
+}
+#left:hover , #right:hover{
+	color: #333333;
+}
+#left:active , #right:active{
+	background-color: #ebac55;
+}
