@@ -18,23 +18,17 @@ body{
 	background-color: aquamarine;
 	background-image: url("https://cdn.wallpapersafari.com/69/19/nhvSi4.png");
 }
-#left{
+.buttons{
 	background-color: #ECB365;
 	border: none;
 	width: auto;
 	height: auto;
 	font-size: 100px;
 }
-#right{
-	background-color: #ECB365;
-	border: none;
-	width: auto;
-	height: auto;
-	font-size: 100px;
-}
-#left:hover , #right:hover{
+
+.buttons:hover {
 	color: #333333;
 }
-#left:active , #right:active{
+.buttons:active {
 	background-color: #ebac55;
 }

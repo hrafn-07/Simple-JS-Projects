@@ -12,10 +12,10 @@ let c = 0;
 buttons.forEach(function (button) {
 	button.addEventListener("click", function () {
 		if (button.classList.contains("left")) {
-			if (c < 0) c = (pics.length - 1);
+			if (c < 0) c = (pics.length - 2);
 			else c--;
 		} else if (button.classList.contains("right")) {
-			if (c > (pics.length - 1)) c = 0;
+			if (c > (pics.length - 2)) c = 0;
 			else c++;
 		}
 		console.log(pics.length - 1)
