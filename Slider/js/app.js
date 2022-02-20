@@ -1,6 +1,7 @@
 var slide = document.getElementById("slide");
 const buttons = document.querySelectorAll(".buttons");
 
+//pics url array
 let pics = [
 	"https://cdn.wallpapersafari.com/69/19/nhvSi4.png",
 	"https://i.pinimg.com/originals/7a/d6/80/7ad680c2aeaf6f89496a174c4e0a92db.jpg",
@@ -9,7 +10,7 @@ let pics = [
 ];
 
 let c = 0;
-buttons.forEach(function (button) {
+buttons.forEach(function (button) {//click button controller
 	button.addEventListener("click", function () {
 		if (button.classList.contains("left")) {
 			if (c < 0) c = (pics.length - 2);
@@ -18,8 +19,6 @@ buttons.forEach(function (button) {
 			if (c > (pics.length - 2)) c = 0;
 			else c++;
 		}
-		console.log(pics.length - 1)
-		console.log(c);
 		slide.style.backgroundImage = "url(" + pics[c] + ")";
 	});
 });
