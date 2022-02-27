@@ -5,9 +5,10 @@
 body {
   background-color: darkslategray;
   font-family: "Montserrat", sans-serif;
+  
 }
 .nav {
-  background-color: yellow;
+  background-color:darkgoldenrod;
   list-style-type: none;
   text-align: center;
   margin: 0;
@@ -19,12 +20,64 @@ body {
   font-size: 20px;
   padding: 20px;
 }
-.nav li button {
+.nav li .btn {
   font-size: 20px;
   padding: 5px 10px;
   font-family: "Montserrat", sans-serif;
-  background-color: darkcyan;
+  background-color: white;
+  border: solid 2px darkcyan;
+  color: darkcyan;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: silver !important;
+  border: solid 2px darkcyan !important;
+  color: darkcyan !important;
+}
+.btn.active{
+  background-color: darkcyan !important;
+  border: solid 2px white !important;
+  color: white !important;
 }
 #search-filt{
 	height: 25px;
+}
+.items{
+  margin: 5% 24%;
+  display: inline-block;
+
+}
+.card{
+  margin: 25px;
+  width: 300px;
+  height: 350px;
+  background-color: blanchedalmond;
+  float:left;
+}
+.card-pic{
+  width: 100%;
+  height: 70%;
+  background-color: aquamarine;
+}
+.card-pic img{
+  width: 100%;
+  height: 100%;
+}
+.card-info{
+  margin: 10px 0 0 10px;
+  width: 50%;
+  float: left;
+}
+.card-header{
+  font-size: 30px;
+}
+.card-sub{
+  font-size: 20px;
+}
+.card-price{
+  text-align: right;
+  width: 40%;
+  float: left;
+  margin: 10px 0 0 0;
+  font-size: 30px;
 }
