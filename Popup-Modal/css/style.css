@@ -47,12 +47,14 @@ body {
   display: inline-block;
 
 }
+
 .card{
   margin: 25px;
   width: 300px;
   height: 350px;
   background-color: blanchedalmond;
   float:left;
+  cursor: pointer;
 }
 .card-pic{
   width: 100%;
@@ -80,4 +82,71 @@ body {
   float: left;
   margin: 10px 0 0 0;
   font-size: 30px;
+}
+/******* Modal *******/
+.modal {
+	display: none;
+  flex-direction: column;
+	position: fixed ;
+	margin:0% 35%;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: auto; /* Full width */
+  height: auto; /* Full height */
+	padding-top: 15%;
+}
+.modal-close{
+  align-items: center;
+  text-align: end;
+  float: left;
+  padding:5px 50px;
+}
+.modal-in{
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.close{
+  width: 50px;
+  height: 50px;
+  justify-content: end;
+  font-size: 3rem;
+  color: white;
+  background: rgb(184, 134, 11);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor:pointer;
+}
+#slide{
+	width: 480px;
+  height: 480px;
+	border: solid 10px;
+  border-color: rgb(184, 134, 11);
+  background-color: #ebac55;
+	background-image: none;
+  background-repeat:round;
+  background-size:contain;
+}
+.buttons{
+  background-color: transparent;
+  color: rgb(184, 134, 11);
+	border: none;
+	width: auto;
+	height: auto;
+	font-size: 100px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+	color: rgb(107, 80, 12);
+}
+.buttons:active {
+	background-color: #ebac55;
+}
+@media screen and (max-width: 1680px) {
+  .modal{
+    margin:10% 20%;
+  }
 }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+
+  <title>Popup Modal</title>
+</head>
+
+<body>
+  <ul class="nav">
+    <li><button class="btn active">All</button></li>
+    <li><button class="btn">Audi</button></li>
+    <li><button class="btn">BMW</button></li>
+    <li><button class="btn">Range Rover</button></li>
+    <li><button class="btn">Mazda</button></li>
+    <li><button class="btn">Nissan</button></li>
+    <br />
+    <li>Search: <input type="search" name="filter" id="search-filter" /></li>
+  </ul>
+  <div class="items">
+    <div class="card">
+      <div class="card-pic">
+        <img
+          src="https://www.campaigntr.com/v3/wp-content/uploads/2021/09/Yeni-Audi-A4-PI-Sat%C4%B1s%CC%A7a-Sunuldu.jpeg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">A4</div>
+        <div class="card-sub">Audi</div>
+      </div>
+      <div class="card-price">$7600</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img src="https://i.pinimg.com/736x/c2/53/dc/c253dcda3e3b8a7ad959fff1c6725b33.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">X3</div>
+        <div class="card-sub">BMW</div>
+      </div>
+      <div class="card-price">$8300</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img
+          src="https://img5.goodfon.ru/original/1024x1024/f/22/mazda-mx-5-rodster-30th-anniversary-edition-2019-miagkii-ver.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">MX-5</div>
+        <div class="card-sub">Mazda</div>
+      </div>
+      <div class="card-price">$7800</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img
+          src="https://i.pinimg.com/736x/a8/9b/d7/a89bd77596bdb951b9ac3dd27f7694b7--still-love-you-range-rover-evoque-white.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">Evoque</div>
+        <div class="card-sub">Range Rover</div>
+      </div>
+      <div class="card-price">7400$</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img src="https://pbs.twimg.com/media/EMRodCEXkAEJWo5.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">GT-R</div>
+        <div class="card-sub">Nissan</div>
+      </div>
+      <div class="card-price">$20000</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img
+          src="https://sun6-22.userapi.com/s/v1/ig1/snrMx-8x-YArDshIYFeSGjeZtyWevRlvwjvlW6n1EtIH724M-oqCpgl8zXi-JPl19MEB44Rl.jpg?size=400x0&quality=96&crop=402,84,1750,1750&ava=1" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">RS6</div>
+        <div class="card-sub">Audi</div>
+      </div>
+      <div class="card-price">$9300</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img src="https://a.d-cd.net/6MAAAgNlLuA-960.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">CX9</div>
+        <div class="card-sub">Mazda</div>
+      </div>
+      <div class="card-price">$7100</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img src="https://www.autocentrum.pl/ac-file/gallery-photo/565fc7def80f0a963506bf41/nissan-350z-19.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">350Z</div>
+        <div class="card-sub">Nissan</div>
+      </div>
+      <div class="card-price">$6900</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img src="https://pbs.twimg.com/media/Esut6VlXUAEWgQv.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">M5</div>
+        <div class="card-sub">BMW</div>
+      </div>
+      <div class="card-price">$7300</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img
+          src="https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/28d/2ef/cde/606707e9d0c92cf14096ddb.png_0_400_13_e600.png" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">R8</div>
+        <div class="card-sub">Audi</div>
+      </div>
+      <div class="card-price">$13000</div>
+    </div>
+    <div class="card">
+      <div class="card-pic">
+        <img src="https://i.pinimg.com/originals/b9/7f/64/b97f645e3a5c114786994935f53ac394.jpg" />
+      </div>
+      <div class="card-info">
+        <div class="card-header">Defender</div>
+        <div class="card-sub">Range Rover</div>
+      </div>
+      <div class="card-price">$8400</div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-close">
+        <i class="close fa-solid fa-close"></i>
+    </div>
+    <div class="modal-in">
+      <button class="buttons left">
+        <i class="fa-solid fa-caret-left"></i>
+      </button><br>
+      <div id="slide"></div>
+      <button class="buttons right">
+        <i class="fa-solid fa-caret-right"></i>
+      </button>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/0960d736be.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
