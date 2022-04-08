@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    height: 58%;
+    position: absolute;
+    top: 25%;
+}
+
+#screen {
+    width: 100%;
+    height: 7rem;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #292938;
+    border: none;
+}
+
+table {
+    width: 100%;
+    height: 50%;
+}
+
+td {
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.number {
+    background-color: lightgray;
+}
+
+.operat {
+    background-color: burlywood;
+}
+
+.clear {
+    background-color: indianred;
+}
+
+.dot {
+    background-color: skyblue;
+}
+
+.equal {
+    background-color: rgb(84, 152, 84);
+}
+
+td:hover {
+    filter: brightness(80%);
+}
+
+td:active {
+    filter: brightness(65%);
+}
