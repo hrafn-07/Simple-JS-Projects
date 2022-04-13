@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-vals">
+                <h3></h3>
+                <h3></h3>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head">
+            TIP CALCULATOR
+        </div>
+        <div class="middle">
+            <form id="inner-form" action="">
+                <div class="row">
+                    <h2> How much bill amount?</h2>
+                    <div class="flex-items">
+                        <div class="input-group">
+                            <span class="icon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+                            <input type="number" name="amount" id="amount">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2> How many payers?</h2>
+                    <div class="flex-items">
+                        <div class="input-group">
+                            <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="number" name="payer" id="payer">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2> How was your service?</h2>
+                    <div class="flex-items">
+                        <div class="input-group">
+                            <select class="" id="tips">
+                                <option selected value="0">Choose...</option>
+                                <option value="20">Perfect - 20%</option>
+                                <option value="10">Good - 10%</option>
+                                <option value="5">Not Bad - 5%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center-items">
+                        <div class="input-group">
+                            <input type="button" value="Calculate" name="calculate" id="calculate" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="result-box">
+            <h2>Tip + Amount : $</h2>
+            <h2>Tip : $</h2>
+            <h2>Payer Each : $</h2>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

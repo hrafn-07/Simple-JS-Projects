@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #afafaf;
+    padding: 12% 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 30rem;
+    height: auto;
+    border-radius: 10px;
+    background-color: #e4d8c1;
+    padding: 0 0 1rem 0;
+}
+
+.head {
+    width: 100%;
+    height: 3rem;
+    background-color: #614124;
+    font-size: 2.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    color: #E8C07D;
+}
+
+.middle {
+    height: 22rem;
+}
+
+#inner-form {}
+
+.row {
+    margin: 1rem;
+}
+
+.flex-items {
+    margin: 15px 0;
+    width: 100%;
+    float: left;
+}
+
+.center-items {
+    align-items: center;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.input-group {
+    color: #E8C07D;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-content: stretch;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.input-group>input,
+select {
+    flex: 1 0 auto;
+    padding: 0;
+    font-size: 30px;
+}
+
+.input-group>select {
+    text-align: center;
+}
+
+#calculate {
+    cursor: pointer;
+    background-color: #614124;
+    color: #E8C07D;
+    border-radius: 0.3rem;
+    border: 3px solid #614124;
+}
+
+#calculate:hover {
+    background-color: #E8C07D;
+    color: #614124;
+    border: 3px solid #614124;
+}
+
+.icon {
+    background: #614124;
+    border: 1px solid #ccc;
+    padding: 0.1em 0.5em;
+}
+
+.result-box {
+    display: none;
+    padding: 1.5rem 0 1rem 8rem;
+    border-top: 3px solid #614124;
+    width: auto;
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30rem;
+}
+
+.modal-vals {
+    padding: 3rem;
+}
+.modal-vals > h2{
+    margin: 5px 0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*******Media Queries********/
+@media screen and (max-width: 1680px) {
+    body {
+        padding: 20% 25%;
+    }
+}
